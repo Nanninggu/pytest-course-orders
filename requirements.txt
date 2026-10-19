@@ -1,0 +1,17 @@
+# 이 프로젝트의 의존 패키지(섹션 8의 requirements-cov.txt와 같은 버전). 2026-10-19에 PyPI 최신 버전을 설치해 이 자료의 실행 결과를 확인한 것이고 촬영 시점에 최종 확정합니다.
+# 8-1~8-3: pytest-cov(커버리지 측정, 안쪽에서 coverage를 씁니다). 8-4: pytest-xdist(테스트를 여러 프로세스로 나눠 실행, 안쪽에서 execnet을 씁니다).
+# 나머지는 주문 API 코드(섹션 5~7의 동기 코드)가 쓰는 패키지입니다. starlette는 FastAPI가 끌어오는 의존 패키지이지만 촬영 환경(1.8.0)과 같게 고정합니다.
+pytest==9.1.1
+pytest-cov==7.1.0
+coverage==7.16.2
+pytest-xdist==3.8.0
+execnet==2.1.2
+pytest-mock==3.17.0
+freezegun==1.5.5
+requests==2.34.2
+responses==0.26.3
+fastapi==0.143.3
+starlette==1.8.0
+uvicorn==0.54.0
+sqlalchemy==2.1.5
+httpx2==2.13.1
